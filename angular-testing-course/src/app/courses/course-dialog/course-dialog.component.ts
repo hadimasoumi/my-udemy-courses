@@ -37,7 +37,12 @@ export class CourseDialogComponent implements OnInit {
     const val = this.form.value;
 
     this.coursesService
-      .saveCourse(this.course.id, { titles: { description: val.description, longDescription: val.longDescription } })
+      .saveCourse(this.course.id, {
+        titles: {
+          description: val.description,
+          longDescription: val.longDescription,
+        },
+      })
       .pipe(tap(() => this.dialogRef.close(this.form.value)))
       .subscribe();
   }
