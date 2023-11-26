@@ -26,4 +26,8 @@ describe('Course Service', () => {
     expect(req.request.method).toEqual('GET');
     req.flush({ payload: Object.values(COURSES) });
   });
+
+  afterEach(() => {
+    httpTestingCountroller.verify();
+  });
 });
