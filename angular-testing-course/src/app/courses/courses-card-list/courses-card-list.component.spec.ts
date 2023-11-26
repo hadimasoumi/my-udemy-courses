@@ -31,6 +31,7 @@ describe('CoursesCardListComponent', () => {
 
   it('should display the course list', () => {
     component.courses = setupCourses();
+    fixure.detectChanges();
 
     const cards = el.queryAll(By.css('.course-card'));
     expect(cards).toBeTruthy('could not find cards');
