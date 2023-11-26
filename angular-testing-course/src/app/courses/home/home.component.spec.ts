@@ -49,7 +49,17 @@ describe('HomeComponent', () => {
   });
 
   it('should display only advanced courses', () => {
-    pending();
+    coursesService.findAllCourses.and.returnValue(of(setupCourses()));
+    fixture.detectChanges();
+
+    const tabs = el.queryAll(By.css('.mdc-tab'));
+    click(tabs[1]);
+    fixture.detectChanges();
+
+    const cardTitles = el.queryAll(By.css('mat-card-title'));
+    console.log('cardTitles >> ', cardTitles);
+    expect(cardTitles.length).toBeGreaterThan(0, 'Could find card titles');
+    expect(cardTitles[0].nativeElement.textContent).toContain('Angular Security Course');
   });
 
   it('should display both tabs', () => {
