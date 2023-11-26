@@ -48,26 +48,42 @@ describe('HomeComponent', () => {
     expect(tabs.length).toBe(1, 'Unexpected number of tabs found');
   });
 
-  it('should display only advanced courses', fakeAsync(() => {
+  it('should display both tabs', () => {
+    coursesService.findAllCourses.and.returnValue(of(setupCourses()));
+    fixture.detectChanges();
+    const tabs = el.queryAll(By.css('.mdc-tab'));
+    expect(tabs.length).toBe(2, 'Expected to find 2 tabs');
+  });
+
+  it('should display advanced courses when tab clicked - fakeAsync', fakeAsync(() => {
+    coursesService.findAllCourses.and.returnValue(of(setupCourses()));
+    fixture.detectChanges();
+    const tabs = el.queryAll(By.css('.mdc-tab'));
+    click(tabs[1]);
+
+    fixture.detectChanges();
+    flush();
+
+    const cardTitles = el.queryAll(By.css('.mat-mdc-tab-body-active .mat-mdc-card-title'));
+    console.log(cardTitles);
+
+    expect(cardTitles.length).toBeGreaterThan(0, 'Could not find card titles');
+    expect(cardTitles[0].nativeElement.textContent).toContain('Angular Security Course');
+  }));
+
+  it('should display advanced courses when tab clicked - async', waitForAsync(() => {
     coursesService.findAllCourses.and.returnValue(of(setupCourses()));
     fixture.detectChanges();
 
     const tabs = el.queryAll(By.css('.mdc-tab'));
     click(tabs[1]);
+
     fixture.detectChanges();
-
-    flush();
-
-    const cardTitles = el.queryAll(By.css('.advanced'));
-    expect(cardTitles.length).toBeGreaterThan(0, 'Could find card titles');
-    expect(cardTitles[0].nativeElement.textContent).toContain('Angular Security Course');
+    fixture.whenStable().then(() => {
+      console.log('called whenStable() ');
+      const cardTitles = el.queryAll(By.css('.mat-mdc-tab-body-active .mat-mdc-card-title'));
+      expect(cardTitles.length).toBeGreaterThan(0, 'Could not find card titles');
+      expect(cardTitles[0].nativeElement.textContent).toContain('Angular Security Course');
+    });
   }));
-
-  it('should display both tabs', () => {
-    pending();
-  });
-
-  it('should display advanced courses when tab clicked', () => {
-    pending();
-  });
 });

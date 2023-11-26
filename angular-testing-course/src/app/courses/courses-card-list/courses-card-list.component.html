@@ -3,11 +3,7 @@
   class="course-card mat-elevation-z10"
 >
   <mat-card-header>
-    <mat-card-title
-      [class.beginner]="course.category == 'BEGINNER'"
-      [class.advanced]="course.category == 'ADVANCED'"
-      >{{ course.titles.description }}</mat-card-title
-    >
+    <mat-card-title>{{ course.titles.description }}</mat-card-title>
   </mat-card-header>
 
   <img
