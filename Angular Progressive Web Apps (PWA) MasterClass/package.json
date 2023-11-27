@@ -10,7 +10,8 @@
     "start:prod": "ng build --prod && cd dist && http-server -c-1 -P http://localhost:9000 .",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "format": "npx prettier --write 'src/**/*.{ts,scss,html}'"
   },
   "private": true,
   "dependencies": {
@@ -56,6 +57,7 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "prettier": "3.1.0",
     "protractor": "^6.0.0",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
