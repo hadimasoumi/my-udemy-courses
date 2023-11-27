@@ -16,7 +16,17 @@ import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent, LessonsComponent],
-  imports: [BrowserModule, HttpClientModule, BrowserAnimationsModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: true,
+    }),
+  ],
   providers: [LessonsService],
   bootstrap: [AppComponent],
 })
