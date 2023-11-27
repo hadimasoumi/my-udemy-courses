@@ -107,7 +107,6 @@
       }
     }
   },
-  "defaultProject": "angular-pwa-course",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "",
