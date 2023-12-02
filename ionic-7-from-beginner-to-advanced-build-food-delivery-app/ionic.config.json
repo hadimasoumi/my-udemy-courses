@@ -1,0 +1,7 @@
+{
+  "name": "Ionic 7+ From Beginner to Advanced - Build Food Delivery App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
