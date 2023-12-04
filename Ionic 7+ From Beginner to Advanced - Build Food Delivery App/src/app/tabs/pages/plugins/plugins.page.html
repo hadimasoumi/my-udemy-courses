@@ -11,7 +11,15 @@
         color="primary"
         routerLink="/tabs/plugins/network"
       >
-        <ion-card-header class="ion-text-center">Network</ion-card-header>
+        <ion-card-header class="ion-text-center">Network&Toast</ion-card-header>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6">
+      <ion-card
+        color="primary"
+        (click)="share()"
+      >
+        <ion-card-header class="ion-text-center">Share</ion-card-header>
       </ion-card>
     </ion-col>
   </ion-row>
