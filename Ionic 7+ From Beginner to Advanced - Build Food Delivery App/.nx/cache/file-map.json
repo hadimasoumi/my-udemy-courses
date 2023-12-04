@@ -12,11 +12,15 @@
     "@angular/router": "^17.0.2",
     "@capacitor/android": "^5.5.1",
     "@capacitor/app": "5.0.6",
+    "@capacitor/camera": "^5.0.7",
     "@capacitor/core": "5.5.1",
     "@capacitor/haptics": "5.0.6",
     "@capacitor/keyboard": "5.0.6",
+    "@capacitor/local-notifications": "^5.0.6",
     "@capacitor/network": "^5.0.6",
+    "@capacitor/share": "^5.0.6",
     "@capacitor/status-bar": "5.0.6",
+    "@capacitor/toast": "^5.0.6",
     "@ionic/angular": "^7.0.0",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
@@ -73,6 +77,22 @@
         "hash": "15665389252131283174"
       },
       {
+        "file": ".nx/cache/file-map.json",
+        "hash": "12670096988952804629"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "7500892023345100699"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "3384599001648114472"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "4429393048290318274"
+      },
+      {
         "file": ".prettierrc",
         "hash": "17193140228380994267"
       },
@@ -90,7 +110,7 @@
       },
       {
         "file": "capacitor.config.ts",
-        "hash": "9889753401527814151"
+        "hash": "11453025417915207208"
       },
       {
         "file": "ionic.config.json",
@@ -102,11 +122,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "18015534750342594635"
+        "hash": "551597987269390527"
       },
       {
         "file": "package.json",
-        "hash": "5599414917873851554"
+        "hash": "9251785392241447245"
       },
       {
         "file": "src/app/app-routing.module.ts",
@@ -153,104 +173,200 @@
         "hash": "10812563321693598943"
       },
       {
-        "file": "src/app/tab1/tab1-routing.module.ts",
-        "hash": "2299724611548889111"
+        "file": "src/app/tabs/pages/plugins/camera/camera-routing.module.ts",
+        "hash": "17072499984455139807"
       },
       {
-        "file": "src/app/tab1/tab1.module.ts",
-        "hash": "12512397434577142401"
+        "file": "src/app/tabs/pages/plugins/camera/camera.module.ts",
+        "hash": "1156047609712291684"
       },
       {
-        "file": "src/app/tab1/tab1.page.html",
-        "hash": "6123583358159587698"
+        "file": "src/app/tabs/pages/plugins/camera/camera.page.html",
+        "hash": "5010359960616295533"
       },
       {
-        "file": "src/app/tab1/tab1.page.scss",
+        "file": "src/app/tabs/pages/plugins/camera/camera.page.scss",
         "hash": "3244421341483603138"
       },
       {
-        "file": "src/app/tab1/tab1.page.spec.ts",
-        "hash": "16433929548751526871"
+        "file": "src/app/tabs/pages/plugins/camera/camera.page.spec.ts",
+        "hash": "5103862714074504995"
       },
       {
-        "file": "src/app/tab1/tab1.page.ts",
-        "hash": "15887122161288646899"
+        "file": "src/app/tabs/pages/plugins/camera/camera.page.ts",
+        "hash": "3805875895471408640"
       },
       {
-        "file": "src/app/tab2/tab2-routing.module.ts",
-        "hash": "12977285320577075824"
+        "file": "src/app/tabs/pages/plugins/contacts/contacts-routing.module.ts",
+        "hash": "15480702495751616745"
       },
       {
-        "file": "src/app/tab2/tab2.module.ts",
-        "hash": "11843618702911789209"
+        "file": "src/app/tabs/pages/plugins/contacts/contacts.module.ts",
+        "hash": "8067690306879877950"
       },
       {
-        "file": "src/app/tab2/tab2.page.html",
-        "hash": "7351358260849409844"
+        "file": "src/app/tabs/pages/plugins/contacts/contacts.page.html",
+        "hash": "18299400628824675968"
       },
       {
-        "file": "src/app/tab2/tab2.page.scss",
+        "file": "src/app/tabs/pages/plugins/contacts/contacts.page.scss",
         "hash": "3244421341483603138"
       },
       {
-        "file": "src/app/tab2/tab2.page.spec.ts",
-        "hash": "944222323171719810"
+        "file": "src/app/tabs/pages/plugins/contacts/contacts.page.spec.ts",
+        "hash": "12288726286084632995"
       },
       {
-        "file": "src/app/tab2/tab2.page.ts",
-        "hash": "12934465212513898978"
+        "file": "src/app/tabs/pages/plugins/contacts/contacts.page.ts",
+        "hash": "2648074756869272457"
       },
       {
-        "file": "src/app/tab3/tab3-routing.module.ts",
-        "hash": "16525252956746625297"
+        "file": "src/app/tabs/pages/plugins/local-notifications/local-notifications-routing.module.ts",
+        "hash": "13920473068055234973"
       },
       {
-        "file": "src/app/tab3/tab3.module.ts",
-        "hash": "12818889218578286934"
+        "file": "src/app/tabs/pages/plugins/local-notifications/local-notifications.module.ts",
+        "hash": "2149776052358424502"
       },
       {
-        "file": "src/app/tab3/tab3.page.html",
-        "hash": "916091199671015507"
+        "file": "src/app/tabs/pages/plugins/local-notifications/local-notifications.page.html",
+        "hash": "17954004784104772527"
       },
       {
-        "file": "src/app/tab3/tab3.page.scss",
+        "file": "src/app/tabs/pages/plugins/local-notifications/local-notifications.page.scss",
         "hash": "3244421341483603138"
       },
       {
-        "file": "src/app/tab3/tab3.page.spec.ts",
-        "hash": "12612087978976458308"
+        "file": "src/app/tabs/pages/plugins/local-notifications/local-notifications.page.spec.ts",
+        "hash": "13359157738724927511"
       },
       {
-        "file": "src/app/tab3/tab3.page.ts",
-        "hash": "12366419516223358773"
+        "file": "src/app/tabs/pages/plugins/local-notifications/local-notifications.page.ts",
+        "hash": "10003231710392750510"
       },
       {
-        "file": "src/app/tabs/plugins/plugins-routing.module.ts",
-        "hash": "11546504402272554230"
+        "file": "src/app/tabs/pages/plugins/network/network-routing.module.ts",
+        "hash": "10247917439089766664"
       },
       {
-        "file": "src/app/tabs/plugins/plugins.module.ts",
+        "file": "src/app/tabs/pages/plugins/network/network.module.ts",
+        "hash": "11478142455190491558"
+      },
+      {
+        "file": "src/app/tabs/pages/plugins/network/network.page.html",
+        "hash": "17380630789294054696"
+      },
+      {
+        "file": "src/app/tabs/pages/plugins/network/network.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/tabs/pages/plugins/network/network.page.spec.ts",
+        "hash": "3761498384776510822"
+      },
+      {
+        "file": "src/app/tabs/pages/plugins/network/network.page.ts",
+        "hash": "3388158134705624912"
+      },
+      {
+        "file": "src/app/tabs/pages/plugins/plugins-routing.module.ts",
+        "hash": "17979168908368833922"
+      },
+      {
+        "file": "src/app/tabs/pages/plugins/plugins.module.ts",
         "hash": "9026283840605135636"
       },
       {
-        "file": "src/app/tabs/plugins/plugins.page.html",
-        "hash": "1065865677392507778"
+        "file": "src/app/tabs/pages/plugins/plugins.page.html",
+        "hash": "3457163216754032282"
       },
       {
-        "file": "src/app/tabs/plugins/plugins.page.scss",
+        "file": "src/app/tabs/pages/plugins/plugins.page.scss",
         "hash": "3244421341483603138"
       },
       {
-        "file": "src/app/tabs/plugins/plugins.page.spec.ts",
+        "file": "src/app/tabs/pages/plugins/plugins.page.spec.ts",
         "hash": "2173542770854615438"
       },
       {
-        "file": "src/app/tabs/plugins/plugins.page.ts",
-        "hash": "1990530400934340649"
+        "file": "src/app/tabs/pages/plugins/plugins.page.ts",
+        "hash": "696082409762822047"
+      },
+      {
+        "file": "src/app/tabs/pages/tab1/tab1-routing.module.ts",
+        "hash": "2299724611548889111"
+      },
+      {
+        "file": "src/app/tabs/pages/tab1/tab1.module.ts",
+        "hash": "9016455831045343714"
+      },
+      {
+        "file": "src/app/tabs/pages/tab1/tab1.page.html",
+        "hash": "6123583358159587698"
+      },
+      {
+        "file": "src/app/tabs/pages/tab1/tab1.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/tabs/pages/tab1/tab1.page.spec.ts",
+        "hash": "16433929548751526871"
+      },
+      {
+        "file": "src/app/tabs/pages/tab1/tab1.page.ts",
+        "hash": "15887122161288646899"
+      },
+      {
+        "file": "src/app/tabs/pages/tab2/tab2-routing.module.ts",
+        "hash": "12977285320577075824"
+      },
+      {
+        "file": "src/app/tabs/pages/tab2/tab2.module.ts",
+        "hash": "3384860896157114886"
+      },
+      {
+        "file": "src/app/tabs/pages/tab2/tab2.page.html",
+        "hash": "7351358260849409844"
+      },
+      {
+        "file": "src/app/tabs/pages/tab2/tab2.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/tabs/pages/tab2/tab2.page.spec.ts",
+        "hash": "944222323171719810"
+      },
+      {
+        "file": "src/app/tabs/pages/tab2/tab2.page.ts",
+        "hash": "12934465212513898978"
+      },
+      {
+        "file": "src/app/tabs/pages/tab3/tab3-routing.module.ts",
+        "hash": "16525252956746625297"
+      },
+      {
+        "file": "src/app/tabs/pages/tab3/tab3.module.ts",
+        "hash": "12445035708863613226"
+      },
+      {
+        "file": "src/app/tabs/pages/tab3/tab3.page.html",
+        "hash": "916091199671015507"
+      },
+      {
+        "file": "src/app/tabs/pages/tab3/tab3.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/tabs/pages/tab3/tab3.page.spec.ts",
+        "hash": "12612087978976458308"
+      },
+      {
+        "file": "src/app/tabs/pages/tab3/tab3.page.ts",
+        "hash": "12366419516223358773"
       },
       {
         "file": "src/app/tabs/tabs-routing.module.ts",
-        "hash": "16619701553566668324"
+        "hash": "10776558286012287926"
       },
       {
         "file": "src/app/tabs/tabs.module.ts",

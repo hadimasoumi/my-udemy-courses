@@ -19,7 +19,11 @@ const routes: Routes = [
   {
     path: 'contacts',
     loadChildren: () => import('./contacts/contacts.module').then( m => m.ContactsPageModule)
+  },  {
+    path: 'local-notifications',
+    loadChildren: () => import('./local-notifications/local-notifications.module').then( m => m.LocalNotificationsPageModule)
   }
+
 ];
 
 @NgModule({

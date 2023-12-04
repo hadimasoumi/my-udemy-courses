@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Local Notifications</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button [defaultHref]="'/tabs/plugins'"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button
+    expand="block"
+    class="ion-margin"
+    (click)="schedule()"
+    >Schedule Notification</ion-button
+  >
+</ion-content>

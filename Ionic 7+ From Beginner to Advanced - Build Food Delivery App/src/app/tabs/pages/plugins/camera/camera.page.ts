@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Camera, CameraResultType } from '@capacitor/camera';
+import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
 import { Capacitor } from '@capacitor/core';
 import { Share } from '@capacitor/share';
 
@@ -21,11 +21,13 @@ export class CameraPage implements OnInit {
   }
 
   async getPhoto() {
-    await Camera.requestPermissions();
+    const permission = await Camera.requestPermissions();
+    if (permission.camera != 'granted' || permission.photos != 'granted') return;
 
     const image = await Camera.getPhoto({
       quality: 90,
       // allowEditing: true,
+      source: CameraSource.Prompt,
       resultType: CameraResultType.Uri,
     });
 
