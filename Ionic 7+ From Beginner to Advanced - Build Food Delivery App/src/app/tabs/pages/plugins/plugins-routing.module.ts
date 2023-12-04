@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path: 'network',
     loadChildren: () => import('./network/network.module').then( m => m.NetworkPageModule)
+  },
+  {
+    path: 'camera',
+    loadChildren: () => import('./camera/camera.module').then( m => m.CameraPageModule)
   }
 ];
 
