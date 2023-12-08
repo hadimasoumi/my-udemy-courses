@@ -78,19 +78,19 @@
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "12670096988952804629"
+        "hash": "10002623420287657513"
       },
       {
         "file": ".nx/cache/lockfile.hash",
-        "hash": "7500892023345100699"
+        "hash": "5395752477038001466"
       },
       {
         "file": ".nx/cache/parsed-lock-file.json",
-        "hash": "3384599001648114472"
+        "hash": "9847645995485097317"
       },
       {
         "file": ".nx/cache/project-graph.json",
-        "hash": "4429393048290318274"
+        "hash": "3038551466531659991"
       },
       {
         "file": ".prettierrc",
@@ -110,7 +110,7 @@
       },
       {
         "file": "capacitor.config.ts",
-        "hash": "11453025417915207208"
+        "hash": "4761508580443714916"
       },
       {
         "file": "ionic.config.json",
@@ -242,7 +242,7 @@
       },
       {
         "file": "src/app/tabs/pages/plugins/local-notifications/local-notifications.page.ts",
-        "hash": "10003231710392750510"
+        "hash": "16618247150539127023"
       },
       {
         "file": "src/app/tabs/pages/plugins/network/network-routing.module.ts",
