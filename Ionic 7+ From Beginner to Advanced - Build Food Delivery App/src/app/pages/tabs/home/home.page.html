@@ -8,24 +8,58 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div>
-    <swiper-container
-    [modules]="swiperModules"
-    [slidesPerView]="1.2"
-    [loop]="true"
-    [initialSlide]="1"
-    [autoplay]="true"
-    [spaceBetween]="20"
-    [pagination]="{clickable: true, dynamicBullets: true}">
-    <swiper-slide>
-      <img src="assets/img/food-banner-1.jpg" alt="">
-    </swiper-slide>
-    <swiper-slide>
-      <img src="assets/img/food-banner-2.jpg" alt="">
-    </swiper-slide>
-    <swiper-slide>
-      <img src="assets/img/food-banner-3.jpg" alt="">
-    </swiper-slide>
-  </swiper-container>
-  </div>
+  <ion-row class="borderBottom">
+    <div>
+      <swiper-container
+      [modules]="swiperModules"
+      [slidesPerView]="1.2"
+      [loop]="true"
+      [initialSlide]="1"
+      [autoplay]="true"
+      [spaceBetween]="20"
+      [pagination]="{clickable: true, dynamicBullets: true}">
+      <swiper-slide>
+        <img src="assets/img/food-banner-1.jpg" alt="">
+      </swiper-slide>
+      <swiper-slide>
+        <img src="assets/img/food-banner-2.jpg" alt="">
+      </swiper-slide>
+      <swiper-slide>
+        <img src="assets/img/food-banner-3.jpg" alt="">
+      </swiper-slide>
+    </swiper-container>
+    </div>
+  </ion-row>
+
+  <ion-list>
+    <ion-list-header class="ion-margin-bottom">
+      <ion-label>
+        <h4>Resturants Nearby</h4>
+        <p>Discover unique tastes near you</p>
+      </ion-label>
+    </ion-list-header>
+    <ion-item lines="none">
+      <ion-thumbnail slot="start">
+        <img src="assets/img/food-banner-1.jpg" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <h4>Stayfit</h4>
+        <ion-text color="medium">
+          <p class="pStyle">Italian, Mexican</p>
+          <ion-text color="dark">
+            <span>
+              <ion-icon name="star"></ion-icon>
+              5 .
+            </span>
+            25 min . 35$ for two
+        </ion-text>
+          <ion-text color="tertiary">
+            <p class="distance">
+              2.59 kms away
+            </p>
+          </ion-text>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
