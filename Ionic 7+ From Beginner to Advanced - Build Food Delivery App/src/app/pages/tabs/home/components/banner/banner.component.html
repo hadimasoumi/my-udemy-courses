@@ -1,0 +1,18 @@
+<ion-row class="borderBottom">
+  <div>
+    <swiper-container
+    [modules]="swiperModules"
+    [slidesPerView]="1.2"
+    [loop]="true"
+    [initialSlide]="1"
+    [autoplay]="true"
+    [spaceBetween]="20"
+    [pagination]="{clickable: true, dynamicBullets: true}">
+    @for (banner of banners; track banner) {
+      <swiper-slide>
+        <img [src]="banner.src" alt="">
+      </swiper-slide>
+    }
+  </swiper-container>
+  </div>
+</ion-row>
