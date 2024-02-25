@@ -10,7 +10,14 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "format": "npx prettier --write 'src/**/*.{ts,scss,html}'"
+    "format": "npx prettier --write 'src/**/*.{ts,scss,html}'",
+    "ionic-serve": "ionic serve",
+    "ionic-build": "ionic build",
+    "android-add": "ionic cap add android",
+    "android-copy": "ionic cap copy android",
+    "android-open": "ionic cap open android",
+    "android-run": "ionic cap run android",
+    "android-run-liveload": "ionic cap run android -l --host=192.168.0.199"
   },
   "private": true,
   "dependencies": {
