@@ -1,0 +1,22 @@
+<ion-grid>
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <ion-icon
+        [name]="model?.icon ?? 'cart-outline'"
+        [color]="model?.color ?? 'tertiary'"
+      ></ion-icon>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <ion-label>
+        {{ model?.title ?? "Your cart is Empty" }}
+      </ion-label>
+      @if (model?.subTitle) {
+        <ion-text>
+          <p>{{ model.subTitle }}</p>
+        </ion-text>
+      }
+    </ion-col>
+  </ion-row>
+</ion-grid>
